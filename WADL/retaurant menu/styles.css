@@ -1,0 +1,155 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #c09e7c;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #aabbbd;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #e67e22;
+}
+
+/* Intro */
+.intro p {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #e67e22;
+  padding-left: 1rem;
+  color: #666;
+}
+
+/* Cuisines */
+.cuisines ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+/* Dish Cards */
+.popular-dishes .dish-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1 1 30%;
+  background-color: #fff7ef;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  color: #d35400;
+  margin: 0.5rem 0;
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #d1bdac;
+  color: white;
+}
+
+td img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #97cbd7;
+  color: white;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .popular-dishes .dish-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
+
+  td img {
+    width: 80px;
+  }
+}
